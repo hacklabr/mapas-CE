@@ -1,8 +1,12 @@
 <?php 
 
+date_default_timezone_set('America/Fortaleza');
+
 return [
-    'app.siteName' => 'Mapas Culturais Base Project',
+    'app.siteName' => 'Mapas Culturais do Ceará',
     'app.siteDescription' => 'O Mapas Culturais é uma plataforma colaborativa que reúne informações sobre agentes, espaços, eventos, projetos culturais e oportunidades',
+
+    'themes.active' => 'MapasCE',
     
     // Define o tema ativo no site principal. Deve ser informado o namespace do tema e neste deve existir uma classe Theme.
     'themes.active' => 'MapasCulturais\Themes\BaseV1',
