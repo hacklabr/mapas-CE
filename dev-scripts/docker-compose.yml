@@ -15,7 +15,7 @@ services:
       - ../compose/local/config.d:/var/www/html/protected/application/conf/config.d
 
       # themes and plugins
-      - ../themes/SampleTheme:/var/www/html/protected/application/themes/SampleTheme
+      - ../themes/MapasCE:/var/www/html/protected/application/themes/MapasCE
       - ../plugins/SamplePlugin:/var/www/html/protected/application/plugins/SamplePlugin
       - ../plugins/MultipleLocalAuth:/var/www/html/protected/application/plugins/MultipleLocalAuth
 
@@ -24,6 +24,7 @@ services:
       - JOBS_INTERVAL=10
       - REDIS_CACHE=redis
       - APP_MODE=development
+      - ACTIVE_THEME=MapasCE
 
     depends_on:
       - db
