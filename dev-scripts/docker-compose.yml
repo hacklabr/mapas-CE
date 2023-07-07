@@ -10,6 +10,7 @@ services:
       - ../docker-data/assets:/var/www/html/assets
       - ../docker-data/public-files:/var/www/html/files
       - ../docker-data/private-files:/var/www/var/private-files
+      - ../docker-data/logs:/var/www/var/logs/
 
       - ../compose/common/config.d:/var/www/config/common.d
       - ../compose/local/config.d:/var/www/config/local.d
