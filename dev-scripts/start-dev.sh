@@ -43,6 +43,7 @@ if [ $DOWN = "1" ]; then
    docker rm $NAME
 fi
 
+sudo chown -R 33:33 -R ../docker-data/assets  ../docker-data/private-files ../docker-data/public-files ../docker-data/sessions ../docker-data/saas-files ../docker-data/logs
 
 docker-compose run --name=$NAME --service-ports  mapas
 
